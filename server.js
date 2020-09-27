@@ -20,11 +20,8 @@ app.get("/", (req, res) => {
 });
 
 // set port, listen for requests
-require("./app/routes/customerRoutes.js")(app);
-require("./app/routes/foodRestaurantRoutes.js")(app);
-require("./app/routes/userRoutes.js")(app);
-require("./app/routes/restaurantRoutes")(app);
-//app.use('/customer',require("./app/routes/customerRoutes.js"));
+require("./app/routes/observedDataRoutes")(app);
+
 app.listen(3000, () => {
   console.log("Server is running on port 3000.");
 });

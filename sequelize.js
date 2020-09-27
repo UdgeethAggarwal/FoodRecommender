@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize')
-const UserModel = require('./app/models/usersModel')
+const observedDataModel = require('./app/models/observedDataModel')
 
 const sequelize = new Sequelize('testdb', 'root', 'root', {
   host: 'localhost',
@@ -12,7 +12,7 @@ const sequelize = new Sequelize('testdb', 'root', 'root', {
   }
 })
 
-const User = UserModel(sequelize, Sequelize)
+const ObservedData = observedDataModel(sequelize, Sequelize)
 
 
 sequelize.sync({ force: true })
@@ -21,5 +21,5 @@ sequelize.sync({ force: true })
   })
 
 module.exports = {
-  User
+  ObservedData
 }

@@ -19,8 +19,8 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-db.restaurants = require("./restaurantModel.js")(sequelize, Sequelize);
-db.users = require("./usersModel.js")(sequelize, Sequelize);
-db.cuisine = require("./cuisineModel.js")(sequelize, Sequelize);
-db.userCuisine = require("./userCuisineModel.js")(sequelize, Sequelize);
+db.observedData = require("./observedDataModel.js")(sequelize, Sequelize);
+// db.users = require("./usersModel.js")(sequelize, Sequelize);
+// db.cuisine = require("./cuisineModel.js")(sequelize, Sequelize);
+//db.userCuisine = require("./userCuisineModel.js")(sequelize, Sequelize);
 module.exports = db;

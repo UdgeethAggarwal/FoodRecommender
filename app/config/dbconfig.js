@@ -2,7 +2,7 @@
     HOST: "localhost",
     USER: "root",
     PASSWORD: "root",
-    DB: "testdb",
+    DB: "d6camera",
     dialect: "mysql",
     pool: {
       max: 5,
